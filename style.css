@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Handil';
+    src: url('handil.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handil', sans-serif;
+}
+
+body {
+    background-image: url('background.png');
+    background-position: center;
+}
+.main,
+.tmain {
+    background-color: transparent;
+    padding: 1vw;
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin: 0 auto;
+    margin-top: 50px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    max-width: calc(100vw - 200px); 
+    align-items: center;
+}
+
+.aarif1,
+.aarif2,
+.aarif3 {
+    position: relative;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.aarif1 img,
+.aarif2 img,
+.aarif3 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.aarif1-on-image,
+.aarif2-on-image,
+.aarif3-on-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; 
+}
+
+@media (max-width: 768px) {
+    .aarif1,
+    .aarif2,
+    .aarif3 {
+        max-width: 80%;
+    }
+}
+
+@media (hover: hover) {
+    .aarif1-on-image:hover,
+    .aarif2-on-image:hover,
+    .aarif3-on-image:hover {
+    background-color: #F8E3C1;
+    }
+}
+
+@media (hover: none) {
+    .aarif1-on-image:active,
+    .aarif2-on-image:active,
+    .aarif3-on-image:active {
+    background-color: #F8E3C1;
+    }
+}
